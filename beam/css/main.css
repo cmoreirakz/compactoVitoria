@@ -1,0 +1,28 @@
+
+#fh5co-hero .flexslider .slider-text > .slider-text-inner.desc {
+  position: relative;
+  top: 10%;
+  font-family: monospace;
+  font-size: 10mm;
+  color:aliceblue;
+  
+}
+
+#fh5co-section .grid-project-section .desc text-center .materials {
+	font-size: 2em;
+	color: #990099;
+}
+
+#myCarousel {
+	width: auto;
+	height: 35%;
+}
+
+#fh5co-team-section .row .about {
+	border-top-width: thick;
+
+}
+
+#fh5c0-section .grid-project-section .desc text-center h1  {
+	color: aliceblue;
+}
