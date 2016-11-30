@@ -60,7 +60,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/main.css">
-
+	
+	<link rel="stylesheet" href="css/lightbox.css">
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -82,27 +83,12 @@
                         <!--NAVIGATION BAR-->
                         <div class="nav-header navbar-fixed-top">
                             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                            <h1 id="fh5co-logo"><a href="index.html"><img border="0" alt="cvLogo" src="images/logoTrans.gif" width="45%" height="35%"></a></h1>
-                            <nav id="fh5co-menu-wrap" role="navigation">
+                            <h1 id="fh5co-logo"><a href="index.html"><img alt="cvLogo" src="images/logoTrans.gif" width="45%" height="35%"></a></h1>
+                            <nav id="fh5co-menu-wrap" >
                                 <ul class="sf-menu" id="fh5co-primary-menu">
                                     <li><a href="produtos.html">Produtos</a></li>
                                     <li>
                                         <a href="obrasRealizadas.html" class="fh5co-sub-ddown">Obras Realizadas</a>
-                                        <ul class="fh5co-sub-menu">
-                                            <li><a href="#janelas">Janelas</a></li>
-                                            <li><a href="#portas">Guarda Corpos</a></li>
-                                            <li><a href="#portao">Portaoes</a></li>
-                                            <li><a href="#armario">Armarios</a></li>
-                                            <li><a href="#predio">Predios &amp; <br>Obras Espe&ccedil;ias</a></li>
-                                            <!--submenu
-                                            <li>
-                                                <a href="#" class="fh5co-sub-ddown">Free HTML5</a>
-                                                <ul class="fh5co-sub-menu">
-                                                    <li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-                                                </ul>
-                                            </li>
--->
-                                        </ul>
                                     </li>
                                     <li><a href="sobreNos.html">Sobre Nos</a></li>
                                     <li><a href="contatos.html">Contatos</a></li>
@@ -129,18 +115,7 @@
                                 <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                                     <div class="slider-text-inner desc">
                                         <h2 class="heading-section">Obras Realizadas</h2>
-                                        <p class="fh5co-lead">Nossas obras...</p>
-										
-										   <!--Buttons with links for navigating obras realizadas-->
-										  <a href="#janelas"  class="btn btn-info" role="button">Janelas</a>
-										  <a href="#guardaCorpos" class="btn btn-info">Guarda Corpos</a>
-										  <a href="#portoes" class="btn btn-info">Portoes</a>
-										  <a href="#armarios" class="btn btn-info">Armarios</a>
-										  <a href="#obrasEspecias" class="btn btn-info">Predios e Obras Especias</a>
-
-
-										
-										
+                                        <p class="fh5co-lead">Pesquise nosso portifolio e ver como nos valorise qualidade em nossos projetos</p>
                                     </div>
                                     <!--end slider-text-->
                                 </div>
@@ -155,9 +130,7 @@
 			
 			<div class="container">
 
-    <div class="alert alert-danger bs-alert-old-docs">
-      <strong>Aviso!</strong> Nossas obras est&atilde;o sempre continuando ent&auml;o volte sempre pra ver fotos novas. </a>
-    </div>
+    
 
     <!-- Docs nav
     ================================================== -->
@@ -171,12 +144,16 @@
                     <li role="presentation" class="brand-nav"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Guarda Corpos</a></li>
                     <li role="presentation" class="brand-nav"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Port&otilde;es</a></li>
                     <li role="presentation" class="brand-nav"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Arm&aacute;rios</a></li>
-					<li role="presentation" class="brand-nav"><a href="#tab5" aria-controls="tab4" role="tab" data-toggle="tab">Obras Espe&ccedil;is</a></li>
+					<li role="presentation" class="brand-nav"><a href="#tab5" aria-controls="tab4" role="tab" data-toggle="tab">Obras Espe&ccedil;ias</a></li>
                 </ul>
             </div>
             <div class="col-md-9">
                 <div class="tab-content">
-					<!--SECTION 1-->
+					
+					
+					
+					<!--SECTION 1
+					========================================================-->
                     <div role="tabpanel" class="tab-pane active" id="tab1">
                         <div id="janelas">
 							<div class="panel panel-info">
@@ -185,23 +162,105 @@
 								</div>
 								<div class="panel-body">
 								<div class="images-portfolio">
-									<div class="row">
-										<div class="col-md-2"><img src="images/obrasRealizadas/janela/janela1.jpg" alt="janela1"></div>
-										<div class="col-md-2"><img src="images/obrasRealizadas/janela/janela2.JPG" alt="janela2"></div>
-										<div class="col-md-2"><img src="images/obrasRealizadas/janela/janela3.jpg" alt="janela3"></div>
-									</div><!--end 1st row-->
-									<div class="row">
-										<div class="col-md-2"><img src="images/obrasRealizadas/janela/janela4.jpg" alt="janela4"></div>
-										<div class="col-md-2"><img src="images/obrasRealizadas/janela/janela5.jpg" alt="janela5"></div>
-										<div class="col-md-2"><img src="images/obrasRealizadas/janela/janela6.jpg" alt="janela6"></div>	
-									</div><!--end 2nd row-->
-								</div>
+									<div class="gallery">
+										<div class="row">
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela1.jpg" data-title="Janela 1" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela1.jpg" width="200px" class="img-thumbnail" 			alt="janela1">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela2.jpg" data-title="Janela 2" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela2.jpg" width="200px" class="img-thumbnail" 			alt="janela2">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela3.jpg" data-title="Janela 3" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela3.jpg" width="200px" class="img-thumbnail" 			alt="janela3">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela4.jpg" data-title="Janela 4" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela4.jpg" width="200px" class="img-thumbnail" 			alt="janela4">
+												</a>
+											</div>
+										</div><!--row1 ends-->
+										
+										<div class="row">
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela5.jpg" data-title="Janela 5" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela5.jpg" width="200px" class="img-thumbnail" 			alt="janela5">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela6.jpg" data-title="Janela 6" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela6.jpg" width="200px" class="img-thumbnail" 			alt="janela2">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela7.jpg" data-title="Janela 7" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela7.jpg" width="200px" class="img-thumbnail" 			alt="janela3">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela8.jpg" data-title="Janela 8" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela8.jpg" width="200px" class="img-thumbnail" 			alt="janela8">
+												</a>
+											</div>
+										</div><!--row2 ends-->
+										
+										<div class="row">
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela9.jpg" data-title="Janela 5" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela9.jpg" width="200px" class="img-thumbnail" 			alt="janela5">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela10.jpg" data-title="" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela10.jpg" width="200px" class="img-thumbnail" 			alt="janela2">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela11.jpg" data-title="Janela 7" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela11.jpg".jpg width="200px" class="img-thumbnail" 			alt="janela3">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela12.jpg" data-title="Janela 8" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela12.jpg" width="200px" class="img-thumbnail" 			alt="janela8">
+												</a>
+											</div>
+										</div><!--row3 ends-->
+										
+										<div class="row">
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela13.jpg" data-title="Janela 5" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela13.jpg" width="200px" class="img-thumbnail" 			alt="janela5">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela14.jpg" data-title="Janela 6" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela14.jpg" width="200px" class="img-thumbnail" 			alt="janela2">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela15.jpg" data-title="Janela 7" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela15.jpg".jpg width="200px" class="img-thumbnail" 			alt="janela3">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/janela/janela16.jpg" data-title="Janela 8" data-lightbox="janelas">		<img src="images/obrasRealizadas/janela/janela16.jpg" width="200px" class="img-thumbnail" 			alt="janela8">
+												</a>
+											</div>
+										</div><!--row3 ends-->
+									</div><!--end gallery-->
+								</div><!--end images portfolio-->
 								</div>
 							</div>
 						</div><!--end panel-->
 					</div><!--end janelas section-->
                     
-					<!--SECTION 2 -->
+					
+					<!------------------------------------Section 2 --------------------------------------------------------->
+					
+
                     <div role="tabpanel" class="tab-pane" id="tab2">
                         <div id="guardaCorpos">
 						<div class="panel panel-info">
@@ -213,17 +272,48 @@
 							
 								<div class="panel-body">
 								<div class="images-portfolio">
-									<div class="row">
-										<div class="col-md-4"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo1.jpeg" alt="guardaCorpo1"></div>
-										<div class="col-md-4"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo2.jpeg" alt="guardaCorpo2"></div>
-										<div class="col-md-4"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo3.jpg" alt="guardaCorpo3"></div>
-									</div><!--end 1st row-->
-									<div class="row">
-										<div class="col-md-3"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo4.jpg" alt="guardaCorpo4"></div>
-										<div class="col-md-3"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo5.jpg" alt="guardaCorpo5"></div>
-										<div class="col-md-3"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo6.jpg" alt="guardaCorpo6"></div>	
-										<div class="col-md-3"><img src="images/obrasRealizadas/guardaCorpo/guarda-corpo7.jpg" alt="guardaCorpo7"></div>
-									</div><!--end 2nd row-->
+									<div class="gallery">
+										<div class="row">
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo1.jpeg" data-title="" data-lightbox="guardaCorpos">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo1.jpeg" width="200px" class="img-thumbnail" 			alt="guardaCorpo1">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo2.jpeg" data-title="" data-lightbox="guardaCorpos">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo2.jpeg" width="200px" class="img-thumbnail" 			alt="guardaCorpo2">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo3.jpg" data-title="" data-lightbox="guardaCorpos">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo3.jpg" width="200px" class="img-thumbnail" 			alt="guardaCorpo3">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo4.jpg" data-title="" data-lightbox="guardaCorpos">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo4.jpg" width="200px" class="img-thumbnail" 			alt="guardaCorpo4">
+												</a>
+											</div>
+										</div><!--row1 ends-->
+										
+										<div class="row">
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo5.jpg" data-title="" data-lightbox="guardaCorpos">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo5.jpg" width="200px" class="img-thumbnail" 			alt="guardaCorpo5">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo6.jpg" data-title="" data-lightbox="guardaCorpos">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo6.jpg" width="200px" class="img-thumbnail" 			alt="guardaCorpo6">
+												</a>
+											</div>
+											
+											<div class="col-lg-3">
+												<a href="images/obrasRealizadas/guardaCorpo/guarda-corpo7.jpg" data-title="" data-lightbox="guardaCorpo">		<img src="images/obrasRealizadas/guardaCorpo/guarda-corpo7.jpg" width="200px" class="img-thumbnail" 			alt="guardaCorpo7">
+												</a>
+											</div>
+										</div><!--row2 ends-->
+									</div><!--end gallery-->
+									
+									
 								</div>
 								</div>
 							
@@ -231,50 +321,73 @@
 						</div><!--end guardaCorpos section-->
                     </div>
 					
-					<!--SECTION 3-->
+					<!--SECTION 3 - PORTOES
+					========================================-->
                     <div role="tabpanel" class="tab-pane" id="tab3">
                         <div id="portoes">
 							<div class="panel panel-info">
-									<div class="panel-heading">
-										<h1 class="panel-title">Port&otilde;es</h1>
+								<div class="panel-heading">
+									<h1 class="panel-title">Port&otilde;es</h1>
+								</div>
+								<div class="panel-body">
+										<div class="images-portfolio">
+										<div class="gallery">
+											<div class="row">
+											<div class="col-lg-6">
+												<a href="images/obrasRealizadas/portao/portao1.JPG" data-title="" data-lightbox="portoes"> 
+													<img src="images/obrasRealizadas/portao/portao1.JPG" width="400px" class="img-thumbnail" alt="portao1">
+												</a>
+											</div>
+											<div class="col-lg-6">
+												<a href="images/obrasRealizadas/portao/portao2.JPG" data-title="" data-lightbox="portoes"> 
+													<img src="images/obrasRealizadas/portao/portao2.JPG" width="400px" class="img-thumbnail" alt="portao2">
+												</a>
+											</div>
+										</div><!--end row-->
+										</div><!--end gallery-->
+									</div><!--end images portfolio-->									
 									</div>
-									<div class="panel-body">
-									<div class="images-portfolio">
-										<div class="row">
-											<div class="col-md-6"><img src="images/obrasRealizadas/portao/portao1.JPG" alt="portao1"></div>
-											<div class="col-md-6"><img src="images/obrasRealizadas/portao/portao2.JPG" alt="portao2"></div>
-										</div><!--end 1st row-->
-									</div>
-									</div><!--end panel-->	
-							</div><!--end portoes section-->
-                    	</div>
-					</div>
+							</div><!--end panel-->	
+						</div><!--end portoes section-->
+                    </div><!--end tab3-->
 					
-					<!--SECTION 4
+					
+					<!--SECTION 4 - ARMARIOS
 					=======================-->
                     <div role="tabpanel" class="tab-pane" id="tab4">
                         <div id="armarios">
 							<div class="panel panel-info">
-								
-									<div class="panel-heading">
-										<h1 class="panel-title">Arm&aacute;rios</h1>
-									</div>
-								
-								
-									<div class="panel-body">
+								<div class="panel-heading">
+									<h1 class="panel-title">Arm&aacute;rios</h1>
+								</div>
+								<div class="panel-body">
 									<div class="images-portfolio">
-										<div class="row">
-											<div class="col-md-6"><img src="images/obrasRealizadas/armario/armario2.jpg" alt="armario5"></div>
-											<div class="col-md-6"><img src="images/obrasRealizadas/armario/armario1.jpg" alt="armario1"></div>
+										<div class="gallery">
+											<div class="row">
+												<div class="col-lg-3">
+													<a href="images/obrasRealizadas/armario/armario1.jpg" data-title="" data-lightbox="armarios">
+														<img src="images/obrasRealizadas/armario/armario1.jpg" width="200px" class="img-thumbnail" alt="armario1">
+													</a>
+												</div>
+												<div class="col-lg-3">
+													<a href="images/obrasRealizadas/armario/armario2.jpg" data-title="" data-lightbox="armarios">
+														<img src="images/obrasRealizadas/armario/armario2.jpg" width="200px" class="img-thumbnail" alt="armario2">
+													</a>
+												</div>
+												<div class="col-lg-3">
+													<a href="images/obrasRealizadas/armario/armario3.jpg" data-title="" data-lightbox="armarios">
+														<img src="images/obrasRealizadas/armario/armario3.jpg" width="200px" class="img-thumbnail" alt="armario3">
+													</a>
+												</div>
+												<div class="col-lg-3">
+													<a href="images/obrasRealizadas/armario/armario4.jpg" data-title="" data-lightbox="armarios">
+														<img src="images/obrasRealizadas/armario/armario4.jpg" width="200px" class="img-thumbnail" alt="armario1">
+													</a>
+												</div>
+											</div><!--end row1-->
 										</div>
-										<div class="row">
-											<div class="col-md-4"><img src="images/obrasRealizadas/armario/armario5.jpg" alt="armario2"></div>
-											<div class="col-md-4"><img src="images/obrasRealizadas/armario/armario3.jpg" alt="armario3"></div>
-											<div class="col-md-4"><img src="images/obrasRealizadas/armario/armario4.jpg" alt="armario4"></div>	
-										</div><!--end 1st row-->
-									</div>
-									</div>
-								
+									</div><!--end images portfolio-->
+								</div>
 							</div><!--end panel-->
 						</div>
                     </div><!--end tab 4-->
@@ -284,30 +397,56 @@
 					<div role="tabpanel" class="tab-pane" id="tab5">
 						<div id="obrasEspecias">
 							<div class="panel panel-info">
-								
 									<div class="panel-heading">
 										<h1 class="panel-title">Obras Espe&ccedil;i&aacute;s</h1>
 									</div>
-								
-								
 									<div class="panel-body">
-									<div class="images-portfolio">
-										<div class="row">
-											<div class="col-md-6"><img src="images/obrasRealizadas/predios_obrasEspecias/predio1.JPG" alt="predio1"></div>
-											<div class="col-md-6"><img src="images/obrasRealizadas/predios_obrasEspecias/predio2.jpg" alt="predio2"></div>	
-										</div>
-										<div class="row">
-											<div class="col-md-4"><img src="images/obrasRealizadas/predios_obrasEspecias/predio3.jpg" alt="predio3"></div>
-											<div class="col-md-4"><img src="images/obrasRealizadas/predios_obrasEspecias/brizeFachada.jpeg" alt="brizeFachada"></div>
-											<div class="col-md-4"><img src="images/obrasRealizadas/predios_obrasEspecias/fachada1.JPG" alt="fachada"></div>
-										</div>
-										<div class="row">
-											<div class="col-md-6"><img src="images/obrasRealizadas/predios_obrasEspecias/predio5.JPG" alt="predio5"></div>
-											<div class="col-md-6"><img src="images/obrasRealizadas/predios_obrasEspecias/predio4.jpg" alt="predio4"></div>
-										</div><!--end 1st row-->
+										<div class="images-portfolio">
+											<div class="gallery">
+												<div class="row">
+													<div class="col-md-6">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/predio1.JPG" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/predio1.JPG"  class="img-thumbnail" alt="predio1">
+														</a>
+													</div>
+													<div class="col-md-6">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/predio2.JPG" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/predio2.JPG" class="img-thumbnail" alt="predio2">
+														</a>
+													</div>
+												</div><!--end row1-->	
+												<div class="row">
+													<div class="col-md-4">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/predio3.JPG" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/predio3.JPG" class="img-thumbnail" alt="predio3">
+														</a>
+													</div>
+													<div class="col-md-4">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/brizeFachada.jpeg" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/brizeFachada.jpeg" class="img-thumbnail" alt="predio3">
+														</a>
+													</div>
+													<div class="col-md-4">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/fachada1.JPG" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/fachada1.JPG" class="img-thumbnail" alt="fachada1">
+														</a>
+													</div>	
+												</div><!--end row2-->
+												<div class="row">
+													<div class="col-md-6">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/predio5.JPG" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/predio5.JPG" class="img-thumbnail" alt="predio5">
+														</a>
+													</div>
+													<div class="col-md-6">
+														<a href="images/obrasRealizadas/predios_obrasEspecias/predio4.JPG" data-title="" data-lightbox="obrasEspecias">
+															<img src="images/obrasRealizadas/predios_obrasEspecias/predio4.JPG" class="img-thumbnail" alt="predio4">
+														</a>
+													</div>
+												</div><!--end row3-->
+											</div>
+										</div><!--end images portfolio-->
 									</div>
-									</div>
-								
 							</div><!--end panel-->
 						</div><!--end obras especias section-->
 					</div>
@@ -327,99 +466,71 @@
 
 <div id="fh5co-section">			
 			
-<!--footer
-=======================================-->
-<footer>
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<h3 class="section-title">Que nos fazemos</h3>
-						<p>Atuamos seguemento de esquadrias de alumnio ha 8 anos! Sabemos as exigencias do mercado por isso garantimos qualidade, bom atendimento e um equipe experiente para execusao de projetos. </p>
+	<!--footer
+	=======================================-->
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h3 class="section-title">Que nos fazemos</h3>
+							<p>Atuamos seguemento de esquadrias de alumnio ha 8 anos! Sabemos as exigencias do mercado por isso garantimos qualidade, bom atendimento e um equipe experiente para execusao de projetos. </p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="section-title">Endere&ccedil;o</h3>
+						<ul class="contact-info">
+							<li><i class="icon-map2"></i>Rua Re&ccedil;ife Nº174 Bairro Niteroi, Betim, MG</li>
+							<li><i class="icon-phone2"></i>+31 3532-7671</li>
+							<li><i class="icon-phone2"></i>+31 9689-5057</li>
+							<li><i class="icon-envelope2"></i><a href="#">compacto.r77@hotmail.com</a></li>
+							<li><i class="icon-globe2"></i><a href="#">www.compactovitoria.com</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3 class="section-title">Fale Conosco</h3>
+						<form class="contact-form">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nome</label>
+								<input type="name" class="form-control" id="name" placeholder="Nome">
+							</div>
+							<div class="form-group">
+								<label for="email" class="sr-only">Numero</label>
+								<input type="text" class="form-control" id="numero" placeholder="Numero">
+							</div>
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="message" class="sr-only">Mensagem</label>
+								<textarea class="form-control" id="message" rows="7" placeholder="Mensagem"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Enviar Mensagem">
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="col-md-3">
-					<h3 class="section-title">Endere&ccedil;o</h3>
-					<ul class="contact-info">
-						<li><i class="icon-map2"></i>Rua Re&ccedil;ife Nº174 Bairro Niteroi, Betim, MG</li>
-						<li><i class="icon-phone2"></i>+31 3532-7671</li>
-						<li><i class="icon-phone2"></i>+31 9689-5057</li>
-						<li><i class="icon-envelope2"></i><a href="#">compacto.r77@hotmail.com</a></li>
-						<li><i class="icon-globe2"></i><a href="#">www.compactovitoria.com</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h3 class="section-title">Fale Conosco</h3>
-					<form class="contact-form">
-						<div class="form-group">
-							<label for="name" class="sr-only">Nome</label>
-							<input type="name" class="form-control" id="name" placeholder="Nome">
-						</div>
-						<div class="form-group">
-							<label for="email" class="sr-only">Numero</label>
-							<input type="text" class="form-control" id="numero" placeholder="Numero">
-						</div>
-						<div class="form-group">
-							<label for="email" class="sr-only">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<label for="message" class="sr-only">Mensagem</label>
-							<textarea class="form-control" id="message" rows="7" placeholder="Mensagem"></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Enviar Mensagem">
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="row copy-right">
-				<div class="col-md-6 col-md-offset-3 text-center">
-					<p class="fh5co-social-icons">
+				<div class="row copy-right">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<p class="fh5co-social-icons">
 
-						<a href="#"><i class="icon-facebook2"></i></a>
-						<a href="#"><i class="icon-instagram"></i></a>
-						<a href="#"><i class="icon-youtube"></i></a>
-					</p>
-					<p>&copy; Compacto Vitoria <a href="#">BRASIL</a> Todos os direitos reservados.
-						<br>Feito Com <i class="icon-heart3"></i> de <a href="#" target="_blank">Camila Moreira</a>
+							<a href="#"><i class="icon-facebook2"></i></a>
+							<a href="#"><i class="icon-instagram"></i></a>
+							<a href="#"><i class="icon-youtube"></i></a>
+						</p>
+						<p>&copy; Compacto Vitoria <a href="#">BRASIL</a> Todos os direitos reservados.
+							<br>Feito Com <i class="icon-heart3"></i> de <a href="https://github.com/cmoreirakz" target="_blank">Camila Moreira</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 
-</div>
-<!-- END fh5co-page -->
+</div><!-- END fh5co-section-->
 
-</div>
-<!-- END fh5co-wrapper -->
+</div><!-- end container -->
 
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 
 <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
@@ -436,6 +547,9 @@
 
     <!-- Main JS (Do not remove) -->
     <script src="js/main.js"></script>
+	<script src="js/main2.js"></script>
+	
+	<script src="js/lightbox.js"></script>
 
 </body>
 

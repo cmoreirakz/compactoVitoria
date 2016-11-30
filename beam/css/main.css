@@ -35,3 +35,22 @@
 .images-portfolio .col-md-4 {
 	padding: 10px;
 }
+
+.popover {
+	border: black;
+}
+
+.modal {
+   position: absolute;
+	
+	width: 1000px;
+	height: 700px;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+   opacity: 1;
+}
+
+.container .row h1 {
+	padding: 15px;
+}
