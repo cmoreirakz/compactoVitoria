@@ -52,6 +52,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" href="css/alphabetsoup.css">
+	
+	
 
 
     <!-- Modernizr JS -->
@@ -76,27 +80,10 @@
                             <h1 id="fh5co-logo"><a href="index.html"><img border="0" alt="cvLogo" src="images/logoTrans.gif" width="45%" height="35%"></a></h1>
                             <nav id="fh5co-menu-wrap" role="navigation">
                                 <ul class="sf-menu" id="fh5co-primary-menu">
-                                    <li><a href="produtos.html">Produtos</a></li>
-                                    <li>
-                                        <a href="obrasRealizadas.html" class="fh5co-sub-ddown">Obras Realizadas</a>
-                                        <ul class="fh5co-sub-menu">
-                                            <li><a href="#janelas">Janelas</a></li>
-                                            <li><a href="#portas">Guarda Corpos</a></li>
-                                            <li><a href="#portao">Portaoes</a></li>
-                                            <li><a href="#armario">Armarios</a></li>
-                                            <li><a href="#predio">Predios &amp; <br>Obras Espe&ccedil;ias</a></li>
-                                            <!--submenu
-                                            <li>
-                                                <a href="#" class="fh5co-sub-ddown">Free HTML5</a>
-                                                <ul class="fh5co-sub-menu">
-                                                    <li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-                                                </ul>
-                                            </li>
--->
-                                        </ul>
-                                    </li>
-                                    <li><a href="sobreNos.html">Sobre Nos</a></li>
-                                    <li><a href="contatos.html">Contatos</a></li>
+									<li class="active"><a href="sobreNos.html">Sobre N&oacute;s</a></li>
+									<li><a href="produtos.html">Produtos</a></li>
+                                    <li><a href="obrasRealizadas.html">Obras Realizadas</a></li>
+                                    <li><a href="#contactForm">Contato</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -117,14 +104,24 @@
                             <div class="container">
                                 <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                                     <div class="slider-text-inner desc">
-                                        <h2 class="heading-section">Valores</h2>
-                                        <p class="fh5co-lead">Etica
-                                            <br> Compromisso
-                                            <br> Pontualidade
-                                            <br> Integridade
-                                            <br> Flexibilidade
+                                        
+										<div class="heading-section">
+											<div id="loader"></div>
+												<div id="soup-container">
+													<h2 class="heading-section">Nossos Valores<hr></h2>
+														<h4 class="fh5co-lead">
+															<br>Etica<br>
+															<br>Compromisso<br>
+													 		<br>Pontualidade<br>
+															<br>Integridade<br>
+													 		<br>Flexibilidade<br>
 
-                                        </p>
+														</h4>
+													
+												</div>
+										</div>
+									
+										
                                     </div>
                                     <!--end slider-text-->
                                 </div>
@@ -142,17 +139,17 @@
                     <div class="row about">
 						
                         <div class="col-md-6">
-                            <h2>Nossos Negocios</h2>
+                            <h2>Nossos Nego&ccedil;ios</h2>
                             <p>Suprir necessidades, oferecendos solucoes em esquadrias a vidros temperados, guarantindo excelencis naquelo que nos produzemos executar.</p>
                         </div>
 
                         <div class="col-md-6">
-                            <h2>Missao</h2>
+                            <h2>Miss&aacute;o</h2>
                             <p>Objetivamos a completa satisfacao e bem estar dos nossos clientes, agregendo nos mais diversos tipos de ambientes, a excellencia do nosso trabalho.</p>
                         </div>
 
                         <div class="col-md-6">
-                            <h2>Visao</h2>
+                            <h2>Vis&aacute;o</h2>
                             <p>Ser referencia no estado de minas gerais no ramo de atuacao de esquadrias alumnio e vidro temperado, buscando sempre aprimorar e imovar constantimente nossos servico. </p>
                         </div>
 						
@@ -186,29 +183,40 @@
 							<!--contact form-->
                             <div id="contactForm" class="col-md-3">
                                 <h3 class="section-title">Fale Conosco</h3>
-                                <form class="contact-form">
+                                <form action="//formpost.co/mail/compactoVitoria2016" method="post" class="contact-form">
+									
+									<input type="hidden" name="subject" value="Novo contato para Compacto Vitoria!">
+
+									
                                     <div class="form-group">
                                         <label for="name" class="sr-only">Nome</label>
-                                        <input type="name" class="form-control" id="name" placeholder="Nome">
+                                        <input type="name" name="name" class="form-control" id="name" placeholder="Nome">
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="sr-only">Numero</label>
-                                        <input type="text" class="form-control" id="numero" placeholder="Numero">
+                                        <input type="text" name="phone" class="form-control" id="numero" placeholder="Numero">
                                     </div>
                                     <div class="form-group">
                                         <label for="email" class="sr-only">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label for="message" class="sr-only">Mensagem</label>
-                                        <textarea class="form-control" id="message" rows="7" placeholder="Mensagem"></textarea>
+                                        <textarea type="text" name="message" class="form-control" id="message" rows="7" placeholder="Mensagem"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Enviar Mensagem">
                                     </div>
                                 </form>
-                            </div>
-                        </div><!--end row-->
+                            </div><!--end cForm-->
+							
+							<!--store map-->
+							<div id="storeMap" class="col-md-3">
+								<h3 class="section-title">Precisa de dire&ccedil;&otilde;es?</h3>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.6017243761233!2d-44.17893871189288!3d-19.949383199157932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c3d330f75675%3A0xde5e8ed7514351f5!2sR.+Recife%2C+174+-+Niter%C3%B3i%2C+Betim+-+MG%2C+32672-094%2C+Brazil!5e0!3m2!1sen!2sus!4v1481329866510" width="350" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div><!--end store map-->
+
+						</div><!--end row-->
                        
 						
 						<div class="row copy-right">
@@ -249,7 +257,9 @@
         <script src="js/superfish.js"></script>
         <!-- Flexslider -->
         <script src="js/jquery.flexslider-min.js"></script>
-
+		<!-- Smooth scrolling functionality -->
+		<script src="js/smooth-scroll.js"></script>
+		
         <!-- Main JS (Do not remove) -->
         <script src="js/main.js"></script>
 
